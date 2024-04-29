@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Turmas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .turma-list {
+            margin-bottom: 20px;
+        }
+        
+        .turma-item {
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .turma-item:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .turma-options {
+            float: right;
+        }
+        
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestão de Turmas</h1>
+        
+        <div class="turma-list">
+            <div class="turma-item">
+                <span>Turma A - 2024</span>
+                <div class="turma-options">
+                    <button>Editar</button>
+                    <button>Excluir</button>
+                </div>
+            </div>
+            <div class="turma-item">
+                <span>Turma B - 2024</span>
+                <div class="turma-options">
+                    <button>Editar</button>
+                    <button>Excluir</button>
+                </div>
+            </div>
+        </div>
+        
+        <form>
+            <h2>Adicionar Nova Turma</h2>
+            <label for="ano">Ano Letivo:</label>
+            <input type="text" id="ano" name="ano" required>
+            <label for="serie">Série:</label>
+            <input type="text" id="serie" name="serie" required>
+            <label for="sala">Sala:</label>
+            <input type="text" id="sala" name="sala" required>
+            <!-- Adicione mais campos conforme necessário -->
+            <input type="submit" value="Adicionar Turma">
+        </form>
+    </div>
+</body>
+</html>
