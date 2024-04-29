@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Professores</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .btn {
+            padding: 6px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Lista de Professores</h2>
+
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Disciplina</th>
+        <th>Contato</th>
+        <th>Ações</th>
+    </tr>
+    <!-- Aqui você pode adicionar os professores dinamicamente -->
+    <tr>
+        <td>Prof. João</td>
+        <td>Matemática</td>
+        <td>(11) 9999-9999</td>
+        <td>
+            <button class="btn">Editar</button>
+            <button class="btn">Excluir</button>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<h2>Adicionar Novo Professor</h2>
+
+<form>
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome"><br>
+    <label for="disciplina">Disciplina:</label><br>
+    <input type="text" id="disciplina" name="disciplina"><br>
+    <label for="contato">Contato:</label><br>
+    <input type="text" id="contato" name="contato"><br><br>
+    <button type="submit" class="btn">Adicionar Professor</button>
+</form>
+
+</body>
+</html>
